@@ -25,7 +25,10 @@
         <img class="myBusPhotos" src="https://th.bing.com/th?id=OIP.ama-tsD0N2zcpvZNGsc7PwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" style="width: 35%;">
     </section>
     <p id="Information" class="w3-sans-serif">Hi! Welcome to my website about buses! This will give you insight about buses and agencies in the southern California region. Click “Agencies” to learn more about buses and agencies! Click “Socials” for specific Agency information, including instagram, contact numbers to Customer Service, etc.  Click “Tracking Apps” for more information on Pantograph and Transit App! And last but not least, click “Meet The Bus Fan” for more information on me!!!!!!</p>
-<script>
+    <p></p>
+        
+        
+    <script>
 var myIndex = 0;
     carousel();
     
@@ -50,6 +53,11 @@ var myIndex = 0;
             text-align: center;
             width: 100%;
             object-fit: cover;
+            top: 0;
+            z-index: 1000;
+            .myBusPhotos img {
+                width: 100%;
+                height: auto;
         }
         #header {
             text-align: center;
