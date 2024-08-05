@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quinns Website</title>
+    </head>
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+    <body>
+        <header id="header" class="w3-wide w3-black"> Quinn's best Informational Bus Website</header>
+        <nav class="w3-bar w3-black">
+            <a href="file:///C:/Users/Mag%204/OneDrive/Desktop/STEM/stemwebsite.html" class="w3-button w3-bar-item">Home</a>
+            <a href="file:///C:/Users/Mag%204/OneDrive/Desktop/STEM/Agency-Selection.html" class="w3-button w3-bar-item">Agencies</a>
+            <a href="file:///C:/Users/Mag%204/OneDrive/Desktop/STEM/Tracking-Apps.html" class="w3-button w3-bar-item">Tracking Apps</a>
+            <a href="#Meet the Bus Fan!" class="w3-button w3-bar-item">Meet the Bus Fan!</a>
+            <a href="file:///C:/Users/Mag%204/OneDrive/Desktop/STEM/Socials.html" class="w3-button w3-bar-item">Socials</a>
+        </nav>
+
+    <section class="w3-bar w3-grey">
+        <h1 class="w3-wide">OmniTrans</h1> <h1 class="w3-wide">Metrolink</h1> <h1 class="w3-wide">Metro</h1>
+    </section>
+    <section>
+        <img class="myBusPhotos" src="C:\Users\Mag 4\OneDrive\Desktop\quinn photos\IMG_7065.JPG" style="width: 35%;">
+        <img class="myBusPhotos" src="C:\Users\Mag 4\OneDrive\Desktop\quinn photos\OmniTrans bus edited.jpg" style="width: 35%;">
+        <img class="myBusPhotos" src="C:\Users\Mag 4\OneDrive\Desktop\quinn photos\IMG_7011.JPG" style="width: 35%;">
+    </section>
+    <p id="Information" class="w3-sans-serif">Hi! Welcome to my website about buses! This will give you insight about buses and agencies in the southern California region. Click “Agencies” to learn more about buses and agencies! Click “Socials” for specific Agency information, including instagram, contact numbers to Customer Service, etc.  Click “Tracking Apps” for more information on Pantograph and Transit App! And last but not least, click “Meet The Bus Fan” for more information on me!!!!!!</p>
+<script>
+var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("myBusPhotos");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+    <style>
+        .myBusPhotos {
+            position: fixed;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            object-fit: cover;
+        }
+        #header {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</body>
+</html> 
